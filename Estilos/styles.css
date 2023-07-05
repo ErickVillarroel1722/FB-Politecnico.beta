@@ -1,0 +1,87 @@
+
+body {
+  background-color: rgb(255, 254, 254);
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: #0b0564;/*Color de la barra de ocpciones*/
+  padding: 9px;/*Ancho de la barra de opciones*/
+}
+nav ul {
+    list-style-type: none;/*Centrado de texto del nav board por defecto*/
+    margin: 0;
+    padding: 0;
+  }
+nav ul li {
+  display: inline-block;/*Estructura lineal del texto nav*/
+}
+
+/*Color de texto del nav*/
+nav ul li a {
+  color: rgb(255, 249, 249);
+  text-decoration: none;
+  padding: 10px;
+}
+nav ul li:hover ul {
+  display: block;
+}
+
+/*Color del banner de la imagen*/
+.image-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95px; 
+  background-color: #ffffff;
+}
+
+/*Tamaño de la imagen */
+.image-banner img {
+  max-width: 100%;
+  max-height: 110%;
+}
+
+/*Color, tamaño y caracteristicas de la caja de inicio de sesion*/
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #130f58;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/*Tamaño de los botones de input del login*/
+.login-form label,
+.login-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*Caracteristicas del boton inicio */
+.login-form input[type="submit"] {
+  background-color: #eb0000;
+  color: #fdfdfd;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*Color del aviso de error*/
+.warning {
+  color: rgb(255, 0, 0);
+  font-size: 12px;
+  display: none;
+}
+/*Color texto del login (No de los inputs)*/
+.login-form label,.login-form h2
+ {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  color: rgb(224, 224, 224); 
+}
