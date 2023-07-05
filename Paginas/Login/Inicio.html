@@ -6,17 +6,15 @@
     </head>
     <body>
         <div class="image-banner">
-            <img
-                src="Recursos/Imagenes/Escudo_de_la_Escuela_Politécnica_Nacional.png"
-                alt="Descripción de la imagen"
-            />
+            <img src="Recursos/Imagenes/Escudo_de_la_Escuela_Politécnica_Nacional.png" alt="Descripción de la imagen" />
         </div>
 
         <nav>
             <ul>
                 <li><a href="Inicio.html">Home</a></li>
-                <li><a href="Calendario.html">Calendario</a></li>
-                <li><a href="Recuperacion de cuenta.html">Recuperar Cuenta</a></li>
+                <li>
+                    <a href="/Paginas/Recuperacion-Cuenta/Recuperacion de cuenta.html">Recuperar Cuenta</a>
+                </li>
             </ul>
         </nav>
 
@@ -26,7 +24,7 @@
                 <label for="username">Usuario:</label>
                 <input type="text" id="username" name="username" required />
                 <span id="usernameWarning" class="warning"
-                    >El formato del usuario debe ser nombre.apellido@epn.ec</span
+                    >El formato del usuario debe ser nombre.apellido@epn.edu.ec</span
                 >
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required />
@@ -45,7 +43,7 @@
                 var username = document.getElementById("username").value;
                 var password = document.getElementById("password").value;
 
-                var emailPattern = /^[A-Za-z]+\.[A-Za-z]+@epn\.ec$/; // Con esto determinamos la estructura como tal del correo.
+                var emailPattern = /^[A-Za-z]+\.[A-Za-z]+@epn\.edu\.ec$/; // Con esto determinamos la estructura como tal del correo.
 
                 if (!emailPattern.test(username)) {
                     document.getElementById("usernameWarning").style.display = "block";
@@ -53,12 +51,12 @@
                 }
 
                 if (password === "12345678") {
-                    window.location.href = "perfilEPN.html"; // Página HTML con el perfil iniciado.
+                    window.location.href = "/Paginas/Perfil/PerfilEPN.html"; // Página HTML con el perfil iniciado.
                 } else {
                     loginAttempts++; // Contador de errores
 
                     if (loginAttempts >= 3) {
-                        window.location.href = "Error sesion.html"; // Aquí colocamos la página de intentos fallidos
+                        window.location.href = "/Paginas/Error-Login/Error sesion.html"; // Aquí colocamos la página de intentos fallidos
                     } else {
                         document.getElementById("passwordWarning").style.display = "block";
                     }

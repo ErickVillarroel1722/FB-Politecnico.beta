@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="\Estilos\styles3.css" />
+        <title>Recuperacion de cuenta</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="\Estilos\styles4.css" rel="stylesheet" />
     </head>
     <body>
         <div class="image-banner">
-            <img
-                src="Recursos/Imagenes/Escudo_de_la_Escuela_Politécnica_Nacional.png"
-                alt="Descripción de la imagen"
-            />
+            <img src="Recursos/Imagenes/Escudo_de_la_Escuela_Politécnica_Nacional.png" alt="Descripción de la imagen" />
         </div>
         <nav>
             <ul>
-                <li><a href="Inicio.html">Regresar al inicio</a></li>
-                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="/Paginas/Login/Inicio.html">Regresar al inicio</a></li>
             </ul>
         </nav>
+
+        <div class="recuperacion-form">
+            <h2>Recuperacion de la Cuenta</h2>
+            <form id="recuperacionForm">
+                <label for="username">Correo electronico: </label>
+                <input type="text" id="username_mail" name="username_mail" required />
+                <input type="submit" value="Enviar" />
+            </form>
+        </div>
     </body>
 </html>
