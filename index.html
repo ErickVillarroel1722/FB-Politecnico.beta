@@ -2,21 +2,21 @@
 <html>
     <head>
         <title>EPN Profile</title>
-        <link rel="stylesheet" href="\Estilos\styles.css" />
+        <link rel="stylesheet" href="/styles/styles.css" />
     </head>
     <body>
         <div class="image-banner">
             <img
-                src="/Paginas/Login/Recursos/Imagenes/Escudo_de_la_Escuela_Politécnica_Nacional.png"
+                src="/scr/Imagenes/logos/Escudo_de_la_Escuela_Politécnica_Nacional.png"
                 alt="Descripción de la imagen"
             />
         </div>
 
         <nav>
             <ul>
-                <li><a href="Inicio.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li>
-                    <a href="/Paginas/Recuperacion-Cuenta/Recuperacion de cuenta.html">Recuperar Cuenta</a>
+                    <a href="/paginas/Recuperacion de cuenta.html">Recuperar Cuenta</a>
                 </li>
             </ul>
         </nav>
@@ -54,12 +54,12 @@
                 }
 
                 if (password === "12345678") {
-                    window.location.href = "/Paginas/Perfil/PerfilEPN.html"; // Página HTML con el perfil iniciado.
+                    window.location.href = "/paginas/PerfilEPN.html"; // Página HTML con el perfil iniciado.
                 } else {
                     loginAttempts++; // Contador de errores
 
                     if (loginAttempts >= 3) {
-                        window.location.href = "/Paginas/Error-Login/Error sesion.html"; // Aquí colocamos la página de intentos fallidos
+                        window.location.href = "/paginas/Error sesion.html"; // Aquí colocamos la página de intentos fallidos
                     } else {
                         document.getElementById("passwordWarning").style.display = "block";
                     }

@@ -1,7 +1,6 @@
 
 body {
-  background-image: url("../Paginas/Error-Login/Recursos/Imagenes/Fondo\ de\ pantalla.jpg");
-  background-color: rgb(255, 254, 254);
+  background-image: url("/scr/Imagenes/fondos/Fondo\ de\ pantalla.jpg");
   color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
