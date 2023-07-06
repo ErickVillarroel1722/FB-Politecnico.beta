@@ -25,13 +25,6 @@ hr {
 	margin-bottom: 20px;
 }
 
-#chat-messages {
-	background-color: white;
-	padding: 10px;
-	height: 300px;
-	overflow-y: scroll;
-}
-
 #chat-input {
 	display: flex;
 	margin-top: 20px;
@@ -46,7 +39,7 @@ hr {
 
 #send-button {
 	padding: 10px 20px;
-	background-color: teal;
+	background-color: rgb(211, 11, 11);
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -55,7 +48,7 @@ hr {
 }
 
 #send-button:hover {
-	background-color: darkcyan;
+	background-color: rgb(139, 0, 0);
 }
 
 /* Estilos para los mensajes en la sala de chat */
