@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sala de Chat Global</title>
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+        <h1>Sala de Chat Global</h1>
+        <hr />
+        <div id="editable-boxes">
+            <div class="editable-box">
+                <h2 class="box-title">Micaela</h2>
+                <textarea class="box-textarea" rows="4"></textarea>
+            </div>
+            <div class="editable-box">
+                <h2 class="box-title">Emily</h2>
+                <textarea class="box-textarea" rows="4"></textarea>
+            </div>
+            <div class="editable-box">
+                <h2 class="box-title">Daniel</h2>
+                <textarea class="box-textarea" rows="4"></textarea>
+            </div>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="chat-input">
+            <input type="text" id="message-input" placeholder="Escribe tu mensaje..." />
+            <button id="send-button">Enviar</button>
+        </div>
+        <textarea id="chat-textarea" rows="10" readonly></textarea>
+
+        <script src="script.js"></script>
+    </body>
+</html>
