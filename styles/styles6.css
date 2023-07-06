@@ -1,0 +1,68 @@
+body {
+	background-image: url("/scr/Imagenes/fondos/Fondo\ de\ pantalla.jpg");
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+	margin: 0;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	color: teal;
+}
+
+hr {
+	border: none;
+	border-top: 2px solid teal;
+	margin-bottom: 20px;
+}
+
+#chat-messages {
+	background-color: white;
+	padding: 10px;
+	height: 300px;
+	overflow-y: scroll;
+}
+
+#chat-input {
+	display: flex;
+	margin-top: 20px;
+}
+
+#message-input {
+	flex: 1;
+	padding: 10px;
+	border: 1px solid teal;
+	border-radius: 5px;
+}
+
+#send-button {
+	padding: 10px 20px;
+	background-color: teal;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#send-button:hover {
+	background-color: darkcyan;
+}
+
+/* Estilos para los mensajes en la sala de chat */
+.message {
+	background-color: #ddbcdb;
+	color: black;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
