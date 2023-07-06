@@ -1,79 +1,88 @@
 body {
-    background-image: url("/scr/Imagenes/fondos/Fondo\ de\ pantalla.jpg");
-    font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
-    margin: 0;
-    padding: 0;
+	background-image: url("/scr/Imagenes/fondos/Fondo\ de\ pantalla.jpg");
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+	margin: 0;
+	padding: 0;
 }
 
 .profile {
-    max-width: 800px;
-    margin: 20px auto;
-    display: flex;
+	max-width: 800px;
+	margin: 20px auto;
+	display: flex;
 }
 
 .profile-info {
-    flex: 1;
-    background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-right: 20px;
+	flex: 1;
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-right: 20px;
 }
 
 .profile h1 {
-    text-align: center;
+	text-align: center;
 }
 
 .profile img {
-    display: block;
-    margin: 0 auto 20px;
-    width: 200px;
-    border-radius: 50%;
+	display: block;
+	margin: 0 auto 20px;
+	width: 200px;
+	border-radius: 50%;
 }
 
 .profile p {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .profile label {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .social {
-    flex: 1;
-    background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+	flex: 1;
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px rgba(0, 0, 1, 0.1);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 .social h2 {
-    text-align: center;
+	text-align: center;
 }
 
 .social-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-top: 10px;
+	border-radius: 50px;
 }
 
 .social-icons a {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
 }
 
 .social-icons img {
-    width: 70px;
-    height: 70px;
-    margin-right: 60px;
+	width: 70px;
+	height: 70px;
+	margin-right: 60px;
 }
 
 .social-icons span {
-    font-size: 20px;
+	font-size: 20px;
+}
+
+div .profile-info {
+	border-radius: 50px;
+}
+
+div .social {
+	border-radius: 50px;
 }
