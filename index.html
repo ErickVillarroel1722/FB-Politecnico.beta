@@ -1,73 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login</title>
-        <link rel="stylesheet" href="/styles/styles.css" />
-    </head>
-    <body>
-        <div class="image-banner">
-            <img
-                src="/scr/Imagenes/logos/Escudo_de_la_Escuela_Politécnica_Nacional.png"
-                alt="Descripción de la imagen"
-            />
-        </div>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="./styles/styles.css" />
+	</head>
+	<body>
+		<div class="image-banner">
+			<img
+				src="/scr/Imagenes/logos/Escudo_de_la_Escuela_Politécnica_Nacional.png"
+				alt="Descripción de la imagen"
+			/>
+		</div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="/paginas/Recuperacion de cuenta.html">Recuperar Cuenta</a>
-                </li>
-            </ul>
-        </nav>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<a href="/paginas/Recuperacion de cuenta.html"
+						>Recuperar Cuenta</a
+					>
+				</li>
+			</ul>
+		</nav>
 
-        <div class="login-form">
-            <h2>Iniciar sesión</h2>
-            <form id="loginForm">
-                <label for="username">Usuario:</label>
-                <input type="text" id="username" name="username" required />
-                <span id="usernameWarning" class="warning"
-                    >El formato del usuario debe ser nombre.apellido@epn.edu.ec</span
-                >
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required />
-                <span id="passwordWarning" class="warning">Contraseña incorrecta</span>
-                <input type="submit" value="Iniciar sesión" />
-            </form>
-        </div>
+		<div class="login-form">
+			<h2>Iniciar sesión</h2>
+			<form id="loginForm">
+				<label for="username">Usuario:</label>
+				<input type="text" id="username" name="username" required />
+				<span id="usernameWarning" class="warning"
+					>El formato del usuario debe ser
+					nombre.apellido@epn.edu.ec</span
+				>
+				<label for="password">Contraseña:</label>
+				<input type="password" id="password" name="password" required />
+				<span id="passwordWarning" class="warning"
+					>Contraseña incorrecta</span
+				>
+				<input type="submit" value="Iniciar sesión" />
+			</form>
+		</div>
 
-        <div class="description"></div>
+		<div class="description"></div>
 
-        <script>
-            var loginAttempts = 0; // Conteo de errores inicio de sesión
+		<script>
+			var loginAttempts = 0; // Conteo de errores inicio de sesión
 
-            document.getElementById("loginForm").addEventListener("submit", function (event) {
-                event.preventDefault();
-                var username = document.getElementById("username").value;
-                var password = document.getElementById("password").value;
+			document
+				.getElementById("loginForm")
+				.addEventListener("submit", function (event) {
+					event.preventDefault();
+					var username = document.getElementById("username").value;
+					var password = document.getElementById("password").value;
 
-                var emailPattern = /^[A-Za-z]+\.[A-Za-z]+@epn\.edu\.ec$/; // Con esto determinamos la estructura como tal del correo.
+					var emailPattern = /^[A-Za-z]+\.[A-Za-z]+@epn\.edu\.ec$/; // Con esto determinamos la estructura como tal del correo.
 
-                if (!emailPattern.test(username)) {
-                    document.getElementById("usernameWarning").style.display = "block";
-                    return;
-                }
+					if (!emailPattern.test(username)) {
+						document.getElementById(
+							"usernameWarning"
+						).style.display = "block";
+						return;
+					}
 
-                if (password === "12345678") {
-                    window.location.href = "/paginas/PerfilEPN.html"; // Página HTML con el perfil iniciado.
-                } else {
-                    loginAttempts++; // Contador de errores
+					if (password === "12345678") {
+						window.location.href = "/paginas/PerfilEPN.html"; // Página HTML con el perfil iniciado.
+					} else {
+						loginAttempts++; // Contador de errores
 
-                    if (loginAttempts >= 3) {
-                        window.location.href = "/paginas/Error sesion.html"; // Aquí colocamos la página de intentos fallidos
-                    } else {
-                        document.getElementById("passwordWarning").style.display = "block";
-                    }
-                }
+						if (loginAttempts >= 3) {
+							window.location.href = "/paginas/Error sesion.html"; // Aquí colocamos la página de intentos fallidos
+						} else {
+							document.getElementById(
+								"passwordWarning"
+							).style.display = "block";
+						}
+					}
 
-                console.log("Usuario: " + username);
-                console.log("Contraseña: " + password);
-            });
-        </script>
-    </body>
+					console.log("Usuario: " + username);
+					console.log("Contraseña: " + password);
+				});
+		</script>
+	</body>
 </html>
